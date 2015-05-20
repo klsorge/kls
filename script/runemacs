@@ -1,0 +1,11 @@
+#!/bin/sh
+
+EMACS=emacsclient
+FRAMES_OPEN=`$EMACS --eval '(length (frame-list))'`
+
+if [ 1 -eq $FRAMES_OPEN ]; then
+    $EMACS --create-frame $@
+else
+    $EMACS $@
+fi
+

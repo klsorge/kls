@@ -1,0 +1,10 @@
+#!/bin/sh
+
+EMACS=emacs
+TIMES_LOGGED_IN=`who | grep $USER | wc -l`
+
+if [ 1 -eq $TIMES_LOGGED_IN ]; then
+    emacsclient --no-wait --eval '(kill-emacs)'
+else
+    echo "User still logged in, not stopping emacs."
+fi

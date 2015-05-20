@@ -1,0 +1,10 @@
+#!/bin/sh
+
+EMACS=emacs
+SERVER_RUNNING=`ps -ef | grep $USER | grep "emacs --daemon" | grep -v grep`
+
+if [ -z "$SERVER_RUNNING" ]; then
+    $EMACS --daemon
+else
+    echo "Emacs daemon already started."
+fi

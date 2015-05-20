@@ -1,0 +1,11 @@
+This is the README file for the KLS Emacs Lisp Library.
+KLS is an emacs library to assist in setting up my Emacs
+environment. This package is not intended to be fit for any purpose
+but my own, and as example lisp code to others.
+
+  Copyright 2012, Kurt Sorge.
+
+  Copying and distribution of this file, with or without modification,
+  are permitted in any medium without royalty provided the copyright
+  notice and this notice are preserved.
+

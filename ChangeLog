@@ -1,0 +1,23 @@
+2015-05-20 Kurt Sorge <klsorge@gmail.com>
+	* Changing to GitHub for source control.
+	
+2013-09-23 Kurt Sorge <klsorge@gmail.com>
+	* Added scripts to handle an emacs server.
+
+2013-09-12 Kurt Sorge <klsorge@gmail.com>
+	* Removing aclocal.m4 since it is a generated file.
+	* Added kls-require to handle optional third-party packages.
+
+2013-09-09 Kurt Sorge <klsorge@gmail.com>
+	* Added support for Java, Common Lisp and Scheme.
+
+2012-08-05 Kurt Sorge <klsorge@gmail.com>
+	* Added basic c mode shell mode and some common functions.
+
+2012-07-23 Kurt Sorge <klsorge@gmail.com>
+	* Added shell mode configuration.
+	* Added configuration for editing C/C++ files.
+	* Added elc-stamp to ignore.
+	* Adding ignore file.
+	* Initial version.
+
