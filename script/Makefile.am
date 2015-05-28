@@ -1,6 +1,6 @@
-# Makefile.am for kls/lisp.
+# Makefile.am for kls/script.
 #
-# Copyright 2012, Kurt Sorge.
+# Copyright (C) 2012-15, Kurt Sorge.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,4 +15,4 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-bin_SCRIPTS = runemacs startemacs stopemacs
+dist_bin_SCRIPTS = runemacs startemacs stopemacs

@@ -1,6 +1,6 @@
 # Makefile.am for kls/lisp.
 #
-# Copyright 2012, Kurt Sorge.
+# Copyright (C) 2012-15, Kurt Sorge.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,7 +15,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-lisp_LISP = kls-setup.el kls-common.el kls-c.el kls-java.el kls-shell.el \
-kls-lisp.el
+klsdir = $(lispdir)/kls
+kls_LISP = kls-setup.el kls-common.el kls-c.el kls-java.el \
+kls-shell.el kls-lisp.el
 
 EXTRA_DIST = $(lisp_LISP)

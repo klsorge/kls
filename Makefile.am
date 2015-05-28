@@ -1,6 +1,6 @@
 # Process this file with automake to produce Makefile.in (in this,
 # and all subdirectories).
-# Makefile for the top-level directory of GNU hello.
+# Makefile for the top-level directory of KLS.
 # 
 # Copyright 2012, Kurt Sorge.
 #
@@ -16,4 +16,5 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 SUBDIRS = . lisp script
