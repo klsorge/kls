@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 klsdir = $(lispdir)/kls
-kls_LISP = kls-setup.el kls-common.el kls-c.el kls-java.el \
+dist_kls_LISP = kls-setup.el kls-common.el kls-c.el kls-java.el \
 kls-shell.el kls-lisp.el
 
 EXTRA_DIST = $(lisp_LISP)

@@ -7,3 +7,4 @@ configure
 missing
 *.cache
 *.elc
+*.tar.gz

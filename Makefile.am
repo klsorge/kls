@@ -18,3 +18,4 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 SUBDIRS = . lisp script
+EXTRA_DIST= emacs.sample
