@@ -1,3 +1,7 @@
+2015-05-30  Kurt Sorge <klsorge@gmail.com>
+	* Changed README to README.md and added some package dependencies.
+	* kls-web.el: Added.
+
 2015-05-28  Kurt Sorge <klsorge@gmail.com>
 	* Added emacs.sample as a sample .emacs file.
 

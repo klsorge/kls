@@ -30,6 +30,7 @@
 (kls-require 'dvc-autoloads)        ; load distributed version control
 (kls-require 'psvn)                 ; load subversion integration
 (kls-require 'quack)                ; load Scheme integration
+(kls-require 'simple-httpd)         ; load a Simple web server
 
 (defvar kls-slime-installed (kls-require 'slime))
 
@@ -70,4 +71,6 @@
 (require 'kls-java)
 (require 'kls-shell)
 (require 'kls-lisp)
+(require 'kls-web)
+
 (provide 'kls-setup)

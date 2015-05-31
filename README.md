@@ -15,3 +15,29 @@ See ./emacs.sample for ideas about how to get KLS incorporated into
 your Emacs environment.
 
 KLS is free software. See the file COPYING for copying conditions.
+
+# Dependencies
+
+## Version Control
+
+### psvn
+https://github.com/emacsmirror/psvn
+
+### dvc
+https://github.com/emacsmirror/dvc
+
+
+## Common Lisp
+
+### Slime
+https://github.com/slime/slime
+
+## Java
+
+### java-mode-indent-annotations
+https://github.com/emacsmirror/java-mode-indent-annotations
+
+## Web Development
+
+### js2-mode
+https://github.com/mooz/js2-mode
