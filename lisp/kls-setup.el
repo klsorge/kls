@@ -29,6 +29,7 @@
 (require 'bookmark)
 (kls-require 'dvc-autoloads)        ; load distributed version control
 (kls-require 'psvn)                 ; load subversion integration
+(kls-require 'geiser-install)
 (kls-require 'quack)                ; load Scheme integration
 (kls-require 'simple-httpd)         ; load a Simple web server
 
@@ -69,8 +70,9 @@
 ;; Add local libraries
 (require 'kls-c)
 (require 'kls-java)
-(require 'kls-shell)
 (require 'kls-lisp)
+(require 'kls-org)
+(require 'kls-shell)
 (require 'kls-web)
 
 (provide 'kls-setup)

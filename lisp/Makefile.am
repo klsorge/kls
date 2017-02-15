@@ -17,6 +17,6 @@
 
 klsdir = $(lispdir)/kls
 dist_kls_LISP = kls-setup.el kls-common.el kls-c.el kls-java.el \
-kls-shell.el kls-lisp.el kls-web.el
+kls-shell.el kls-lisp.el kls-web.el kls-org.el
 
 EXTRA_DIST = $(lisp_LISP)
