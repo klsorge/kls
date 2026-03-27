@@ -26,6 +26,11 @@
 
 ;;; Code:
 
+(defun my-set-frame-size (frame)
+  (set-frame-size frame 80 35))
+
+(add-hook 'after-make-frame-functions 'my-set-frame-size)
+
 (defun get-user-home ()
   "Setup the user $HOME directory as a prefix for our paths"
   (replace-regexp-in-string "\\\\" "/" (getenv "HOME")))

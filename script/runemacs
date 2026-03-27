@@ -1,11 +1,11 @@
 #!/bin/sh
 
 EMACS=emacsclient
-FRAMES_OPEN=`$EMACS --eval '(length (frame-list))'`
+FRAMES_OPEN=`$EMACS --no-wait --eval '(length (frame-list))'`
 
 if [ 1 -eq $FRAMES_OPEN ]; then
-    $EMACS --create-frame $@
+	$EMACS --no-wait --create-frame $@
+	$EMACS --no-wait --eval '(set-frame-size (selected-frame) 80 35)'
 else
-    $EMACS $@
+    	$EMACS --no-wait --reuse-frame $@
 fi
-
