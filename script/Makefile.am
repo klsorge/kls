@@ -15,4 +15,4 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-dist_bin_SCRIPTS = runemacs startemacs stopemacs
+dist_bin_SCRIPTS = runemacs stopemacs

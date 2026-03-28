@@ -1,11 +1,17 @@
 #!/bin/sh
 
-EMACS=emacsclient
-FRAMES_OPEN=`$EMACS --no-wait --eval '(length (frame-list))'`
+EMACS=/usr/bin/emacs
+EMACS_CLIENT=/usr/bin/emacsclient
+SERVER_RUNNING=`ps -ef | grep $USER | grep "emacs --daemon" | grep -v grep`
 
+if [ -z "$SERVER_RUNNING" ]; then
+	$EMACS --daemon
+fi
+
+FRAMES_OPEN=`$EMACS_CLIENT --no-wait --eval '(length (frame-list))'`
 if [ 1 -eq $FRAMES_OPEN ]; then
-	$EMACS --no-wait --create-frame $@
-	$EMACS --no-wait --eval '(set-frame-size (selected-frame) 80 35)'
+	$EMACS_CLIENT --no-wait --create-frame $@
+	$EMACS_CLIENT --no-wait --eval '(set-frame-size (selected-frame) 80 35)'
 else
-    	$EMACS --no-wait --reuse-frame $@
+    	$EMACS_CLIENT --no-wait --reuse-frame $@
 fi
